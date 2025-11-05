@@ -108,6 +108,7 @@
   display: block;
   color: rgb(244, 244, 244);
   text-decoration: none;
+  flex-direction: row;
   margin: 5px 0;
 }
 
@@ -123,7 +124,7 @@
 
 .menu-container h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size:2.5rem;
   margin-bottom: 50px;
   color: #000000;
 }
@@ -175,7 +176,6 @@
   margin: 0 15px 15px;
   color: #666;
 }
-
 .menu-card .price {
   display: block;
   font-size: 1.2rem;
