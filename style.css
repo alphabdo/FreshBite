@@ -30,7 +30,8 @@
 }
 
 .nav-links a:hover {
-  color: #555;
+  color: #3b3f34;
+  transition: 0.5s;
 }
 
 .hero-section {
@@ -46,11 +47,11 @@
 }
 
 .description-box {
+  width: auto;
   position: absolute;
   top: 50%;
   left: 50px;
-  height: 50%;
-
+  height: 50%;;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   padding: 40px;
@@ -183,4 +184,191 @@
   color: #2d5016;
   margin: 15px;
   text-align: right;
+}
+
+.gallery-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap : 20px;
+    margin-top: 30px;
+}
+
+.gallery-section p{
+  font-size: 20px;
+  margin-bottom:20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 28px;
+   width: 60%;
+}
+
+.gallerie-images{
+    width: 73%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+
+}
+
+.gallerie-images img{
+    width: 100%;
+    
+    object-fit: cover;
+    border-radius: 6px;
+}
+.gallerie-images img:hover {
+    transform: scale(1.05);
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.contact-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #000000;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+/* Section formulaire */
+.contact-form-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 3px solid #c6ff69;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #c6ff69;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Messages d'erreur */
+.error-text {
+    display: none;
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.message {
+    display: none;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Bouton d'envoi */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #3b3f34;
+    color: #c6ff69;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #c6ff69;
+    color: #3b3f34;
+    transform: translateY(-2px);
+}
+
+/* Section carte */
+.map-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 3px solid #c6ff69;
+    padding-bottom: 10px;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+@media screen and (max-width: 428px) {
+
+
+
+  .gallerie-images {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery-section p{
+    padding: 0px 30px;
+    line-height: 24px;
+  }
+
+  .gallery-section h2{
+    font-size: 32px;
+  }
 }
